@@ -1,20 +1,25 @@
-package pratice;
+import java.util.Scanner;
 
-public class pratice {
- 
-    public static void main(String args[])
+class strings
+{public static void main(String[] args)
     {
-        String str="programmer@gmail.com";
-        int i=str.indexOf("@");
-        String username= str.substring(0,i);
-        String domain=str.substring(i+1,str.length());
+        int age;
 
-        System.out.println("username:"+username);
-        System.out.println("domain:"+domain);
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        age=sc.nextInt();
 
-        System.out.println(domain.startsWith("gmail"));
+        if(age>=14&&age<=55)
+        {
+            System.out.println("you are young");
+        }
+        else
 
+        {
+            System.out.println("you are not young");
+
+        }
+        sc.close(); 
+        
     }
 }
-    
-
