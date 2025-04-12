@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-class strings
+class loop
 {
-    public static void main(strings args[])
+    public static void main(Strings args[])
     
     {
       int m1,m2,m3;

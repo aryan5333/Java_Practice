@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
-class strings
+class aniket
 {
-    public static void main(strings args[])
-    
+    public static void main(String[]args)
     {
       int m1,m2,m3;
       Scanner sc=new Scanner(System.in);
-      System.out.println(System.in);
+      System.out.println("Enter marks of subject");
       m1=sc.nextInt();
       m2=sc.nextInt();
       m3=sc.nextInt();
@@ -40,6 +39,9 @@ class strings
 
     }
 }
+
+
+    
 
 
     
