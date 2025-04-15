@@ -1,48 +1,30 @@
-import java.util.Scanner;
+import java.lang.*;
 
-class aniket
-{
-    public static void main(String[]args)
-    {
-      int m1,m2,m3;
-      Scanner sc=new Scanner(System.in);
-      System.out.println("Enter marks of subject");
-      m1=sc.nextInt();
-      m2=sc.nextInt();
-      m3=sc.nextInt();
-
-      float avg=(m1+m2+m3)/3;
-
-      if(avg>=70)
+class aryan{
+   public static void main(String[]args)
+   {
+      int a=5,b=6,c=4;
+      if(a>b&&a>c)
       {
-        System.out.println("grade A");
+         System.out.println(a);
       }
-      else if(avg>=60&&avg<70)
+      else
+      if(b>c)
       {
-        System.out.println("grade B");
-
-      }
-      else if(avg>=50&&avg<60)
-      {
-        System.out.println("grade c");
-      }
-      else if(avg>=40&&avg<50)
-      {
-        System.out.println("grade D");
-
+         System.out.println(b);
       }
       else{
-        System.out.println("grade E");
+         System.out.println(c);
       }
+      
+         
+      }
+   }
+      
 
+      
+      
+      
 
-
-    }
-}
-
-
-    
-
-
-    
+   
 
