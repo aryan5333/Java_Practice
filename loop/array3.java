@@ -1,24 +1,26 @@
 import java.lang.*;
-import java.util.Scanner; 
+import java.util.Scanner;
 
 class array3
 {
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int A[]={1,2,5,8,9,12,18};
-        for(int x:A)
-        System.out.println(x+"");
-        System.out.println("");
-        int temp=A[0];
-        for(int i=1;i<A.length;i++)
+        int A[]={1,2,13,16,7,45,84};
+        int max1,max2;
+         max1=max2=A[0];
+        for(int i=0;i<A.length;i++)
         {
-            A[i-1]=A[i];
+            if(A[i]>max1)
+            {
+                max2=max1;
+                max1=A[i];
+            }
+            else if(A[i]>max2)
+            {
+                max2=A[i];
+            }
         }
-        A[A.length-1]=temp;
-        for(int x:A)
-        System.out.println(x+",");
-        System.out.println("");
-    }
+        System.out.println("Second Largest is"+max2);
         
     }
+}
