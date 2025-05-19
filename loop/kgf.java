@@ -20,5 +20,6 @@ class kgf
             System.out.println("Denominator should not be 0,try again");
         }
         System.out.println("Bye");
+        sc.close();
     }
 }
