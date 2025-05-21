@@ -1,5 +1,3 @@
-package loop;
-
 
 public class Member {
 
