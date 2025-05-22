@@ -2,11 +2,27 @@ import java.lang.*;
 
 class MyThread extends Thread
 {
+    private int count = 0;
 
     public MyThread(String name)
     {
         super(name);
         setPriority(Thread.MIN_PRIORITY);
+    }
+    public void run()
+    {
+        int i=1;
+        while (true) { 
+            System.out.println(count++);
+            try
+            {
+                Thread.sleep(1000);
+            }
+            catch(InterruptedException e)
+            {
+                System.out.println(e);
+            }
+        }
     }
 
 

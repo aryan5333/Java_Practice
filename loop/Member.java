@@ -32,7 +32,7 @@ public class Member {
         }
     }
 }
-public class Member2
+public class Membertest
 {
     public static void main(String[]args)
     {

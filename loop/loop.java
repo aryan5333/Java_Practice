@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class loop
 {
-    public static void main(Strings args[])
+    public static void main(String[]args)
     
     {
       int m1,m2,m3;
