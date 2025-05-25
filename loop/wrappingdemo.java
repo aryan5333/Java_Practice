@@ -12,14 +12,17 @@ public class wrappingdemo
     Byte bb=15;
     Byte f=Byte.valueOf(bb);
 
-    Short f=Short.valueOf("123");
+    Short s=Short.valueOf("123");
 
-    Float g=12.3f;
-    float g=float.valueOf("123.5");
-    Double j=Double.valueOf(123.456);
+    Float g = 12.3f;
+    Float h = Float.valueOf("123.5");
+    Double j = Double.valueOf(123.456);
     Character k=Character.valueOf('A');
 
     Boolean l=Boolean.valueOf("true");
 
 
 }
+
+
+(these all are Wrapper classes package in java.lang)
