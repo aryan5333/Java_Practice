@@ -2,7 +2,7 @@
  * @version 2.0
  * @since 2015
 **/
-package loop;
+package javadoc;
 
 /**
  * 
