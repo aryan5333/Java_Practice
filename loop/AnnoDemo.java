@@ -1,4 +1,8 @@
+import java.lang.annotation.ElementType;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
+@Target(value=ElementType.LOCAL_VARIABLE)
 @interface MyAnno
 {
     String name();
