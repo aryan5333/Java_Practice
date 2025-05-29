@@ -12,6 +12,14 @@ class UseLambda
         ml.display();
     }
 }
+class Demo
+{
+    public void method1()
+    {
+        UseLambda ul=new UseLambda();
+        ul.callLambda(()->{System.out.println("Hello");});
+    }
+}
 public class l {
     public static void main(String[] args) {
         UseLambda ul = new UseLambda();
