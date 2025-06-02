@@ -4,7 +4,7 @@ import java.lang.*;
 public class Randomaccess
 {
     public static void main(String[] args) throws Exception  {
-        RandomAccessFile rf=new RandomAccessFile("C:\\Users\\sinha>/ Data.txt", "rw");
+        RandomAccessFile rf = new RandomAccessFile("C:\\Users\\sinha\\Data.txt", "rw");
 
         
 
