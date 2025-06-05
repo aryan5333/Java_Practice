@@ -14,12 +14,16 @@ public class HashTable
         hs.put(5,"G");
 
         String s=(String)hs.get(3);
-        Enumeration e=hs.keys();
+
+        hs.computeIfAbsent(7, (k)->"S"+k);
+
+        hs.compute(2, (k,v)->v+"z");
+       /*   Enumeration e=hs.keys();
 
         while(e.hasMoreElements())
         {
             System.out.println(e.nextElement());
-        }
+        }*/
 
         System.out.println(hs);
 
