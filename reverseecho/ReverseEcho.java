@@ -47,8 +47,7 @@ class client
         }while(!msg.equals("dne"));
 
         stk.close();
-
-
+          
 
     }
 }
