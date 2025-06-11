@@ -1,6 +1,5 @@
 import java.lang.*;
 import java.sql.*;
-import java.util.*;
 
 public class Database
 {
@@ -8,10 +7,15 @@ public class Database
     {
         Class.forName("org.sqlite.JDBC");
         Connection con = DriverManager.getConnection("jdbc:sqlite:c://sqlite//univ");
-        //Statement stm = con.createStatement();
-        PreparedStatement stm = con.prepareStatement("insert into students values(?,?,?,?,?)");
+        Statement stm = con.createStatement();
 
-        Scanner sc=new Scanner(System.in);
+
+        stm.executeUpdate("create table Temp(a integer,b float)");
+
+        stm.executeUpdate("drop table temp");   
+        //PreparedStatement stm = con.prepareStatement("insert into students values(?,?,?,?,?)");
+
+        /*Scanner sc=new Scanner(System.in);
         System.out.println("Enter student data");
         int r = sc.nextInt();
         sc.nextLine(); // consume the leftover newline
@@ -24,7 +28,7 @@ public class Database
         stm.setString(3,city);
         stm.setInt(4,dno);
 
-        stm.executeUpdate();
+        stm.executeUpdate();*/
 
 
 
@@ -35,7 +39,7 @@ public class Database
        //stm.executeUpdate("update dept set dname='chem' where deptno=50");
 
        
-        pstmt.close();
+       // pstmt.close();
         con.close();
         con.close();
 
