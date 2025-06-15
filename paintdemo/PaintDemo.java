@@ -11,6 +11,7 @@ class MyFrame extends Frame
     {
         super("Paint Demo");
         addMouseListener(new MyMouseAdapter());
+        addWindowListener(new MyWindowAddapter());
        
 
         
@@ -29,10 +30,15 @@ class MyFrame extends Frame
     public void paint(Graphics g)
     {
         g.setColor(Color.red);
-        g.fillRect(x, y, 100,100);
+        g.fillRect(x, y, 200,100);
         g.setFont(new Font("Arial",Font.BOLD,50));
         g.drawString("Hello",x,y);
     }
+    class MyWindowAddapter extends WindowAdapter {
+    public void windowClosing(WindowEvent we) {
+        System.exit(0);
+    }
+}
 }
 
 public class PaintDemo {

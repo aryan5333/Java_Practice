@@ -4,66 +4,68 @@ import java.awt.event.*;
 
 class MyFrame extends Frame implements ActionListener,ItemListener
 {
-    Menu file,sub;
-    MenuItem open,save,close,closeAll;
+    Menu File,Sub;
+    MenuItem save,choose,open,closeAll;
 
     CheckboxMenuItem auto;
-    
+
     TextField tf;
     MenuBar mb;
 
     MyFrame()
     {
-        super("Menu Demo");
+        super("MenuDemo2");
 
-        file=new Menu("File");
-        sub=new Menu("Sub");
+        File=new Menu("File");
+        Sub=new Menu("Sub");
 
-        open=new MenuItem("open");
-        open.addActionListener(this);
         save=new MenuItem("Save");
         save.addActionListener(this);
-        close=new MenuItem("Close");
-        close.addActionListener(this);
+        choose=new MenuItem("choose");
+        choose.addActionListener(this);
+        open=new MenuItem("Open");
+        open.addActionListener(this);
         closeAll=new MenuItem("CloseAll");
         closeAll.addActionListener(this);
 
-        auto=new CheckboxMenuItem("Auto save");
+        auto=new CheckboxMenuItem("Auto Save");
         auto.addItemListener(this);
-        addWindowListener(new MyWindowAddapter());
 
-        file.add(open);
-        file.add(save);
-        file.add(sub);
-        file.add(auto);
+        File.add(save);
+        File.add(choose);
+        File.add(auto);
+        File.add(Sub);
 
-        sub.add(close);
-        sub.add(closeAll);
+        Sub.add(closeAll);
+        Sub.add(open);
 
-        mb=new MenuBar();
-        mb.add(file);
-        setMenuBar(mb);
-        tf=new TextField(20);
-
-        setLayout(new FlowLayout());
+        tf=new TextField("30");
         add(tf);
 
-        
+        mb=new MenuBar();
+        mb.add(File);
+
+        setLayout(new FlowLayout());
+        addWindowListener(new MyWindowAddapter());
+
+
     }
-    @Override
-    public void actionPerformed(ActionEvent e)
+    public void actionPerformed(ActionEvent ae)
     {
-        tf.setText(e.getActionCommand());
+        tf.setText(ae.getActionCommand());
+        
     }
     public void itemStateChanged(ItemEvent e)
     {
         if(auto.getState())
         {
-            tf.setText("Auto on");
+            tf.setText("Auto On");
         }
-        else{
+        else
+        {
             tf.setText("Auto off");
         }
+
     }
     class MyWindowAddapter extends WindowAdapter
     {
@@ -71,13 +73,10 @@ class MyFrame extends Frame implements ActionListener,ItemListener
         {
             System.exit(0);
         }
-
     }
-
-
 }
 
-public class MenuDemo {
+public class MenuDemotrial {
     public static void main(String[]args)
     {
         MyFrame f=new MyFrame();
