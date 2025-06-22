@@ -16,7 +16,7 @@ import javafx.scene.paint.*;
 import javafx.event.*;
 
 
-public class JFXProject extends Application 
+public class JFXProject extends Application
  {
     Text t;
     RadioButton r1,r2,r3;
