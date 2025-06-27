@@ -1,10 +1,9 @@
 package swingsliderdemo;
 import java.awt.*;
-import javax.crypto.interfaces.PBEKey;
-import javax.swing.JProgressBar;
-import javax.swing.JSlider;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JProgressBar;
+import javax.swing.JSlider;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
@@ -27,7 +26,7 @@ class MyFrame extends JFrame implements ChangeListener
         ps=new JProgressBar();
         ps.setString("50%");
         ps.setStringPainted(true);
-        //ps.setIndeterminate(true);
+        ps.setIndeterminate(true);
 
         p1=new JPanel(){
             public void paintComponent(Graphics g)
