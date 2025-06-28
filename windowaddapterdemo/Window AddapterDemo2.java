@@ -15,7 +15,7 @@ class MyFrame extends Frame
     }
 }
 
- Define the missing MyWindowAddapter class
+ //Define the missing MyWindowAddapter class
 class MyWindowAddapter extends WindowAdapter {
     public void windowClosing(WindowEvent we) {
         System.exit(0);

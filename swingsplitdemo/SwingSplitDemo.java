@@ -24,12 +24,13 @@ class MyFrame extends JFrame implements ListSelectionListener
         lb.setOpaque(true);
         JScrollPane sb2=new JScrollPane(lb);
         
-        //sp=new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,sb1,sb2);
-        //sp.setDividerLocation(200);
-        JTabbedPane tb=new JTabbedPane();
-        tb.addTab("Colors",sb1);
-        tb.addTab("Label",sb2);
-        add(tb);
+        sp=new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,sb1,sb2);
+        sp.setDividerLocation(200);
+        add(sp);
+        //JTabbedPane tb=new JTabbedPane();
+        //tb.addTab("Colors",sb1);
+        //tb.addTab("Label",sb2);
+        //add(tb);
     }
     public void valueChanged(ListSelectionEvent e)
     {

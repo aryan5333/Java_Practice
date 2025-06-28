@@ -14,7 +14,7 @@ class MyFrame extends Frame implements MouseListener,MouseMotionListener
        
 
         setLayout(null);
-3
+
         l1.setBounds(10,50,100,20);
         l2.setBounds(30,80,110,20);
        

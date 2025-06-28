@@ -1,5 +1,7 @@
 package animationdemo;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.*;
 
 class MyFrame extends Frame implements Runnable
 {
@@ -13,14 +15,17 @@ class MyFrame extends Frame implements Runnable
         tx=ty=1;
         Thread t=new Thread(this);
         t.start();
+        
     }
-    public void paint(Graphics g)
+     public void paint(Graphics g)
     {
-        g.setColor(Color.GREEN);
-        g.fillRect(x, y, 50,50);
-
-
+        g.setColor(Color.RED);
+        g.fillOval(x,y,80,80);
     }
+    
+
+
+    
     public void run()
     {
         while (true) {
@@ -41,6 +46,7 @@ class MyFrame extends Frame implements Runnable
     }
 
 }
+
 
 public class AnimationDemo {
     public static void main(String[] args) {
