@@ -22,7 +22,7 @@ class MyFrame extends JFrame implements Runnable
     public void paint(Graphics g)
     {
         g.setColor(Color.RED);
-        g.fillRect(x,y,80,80);
+        g.fillOval(x,y,100,100);
     }
     public void run()
     {

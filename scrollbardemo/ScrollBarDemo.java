@@ -8,6 +8,7 @@ class MyFrame extends Frame implements AdjustmentListener
     Scrollbar red,green,blue;
     
     TextField tf;
+    
 
     MyFrame()
     {
