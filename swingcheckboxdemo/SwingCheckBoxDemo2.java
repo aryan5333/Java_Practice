@@ -46,6 +46,7 @@ class MyFrame extends JFrame implements ActionListener
 
 
     }
+    @Override
     public void actionPerformed(ActionEvent ae)
     {
         switch(ae.getActionCommand())
