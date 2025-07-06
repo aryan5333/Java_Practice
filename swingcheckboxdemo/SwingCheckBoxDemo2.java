@@ -39,7 +39,7 @@ class MyFrame extends JFrame implements ActionListener
         add(c1);
         add(c2);
         add(r1);
-        add(r2);
+        add(r2)
 
 
 

@@ -29,7 +29,7 @@ class MyFrame extends Frame
 
     class handler implements TextListener,ActionListener
     {
-        @Override
+        
          public void textValueChanged(TextEvent te)
           {
               l1.setText(tf.getText());
