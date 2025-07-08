@@ -1,5 +1,4 @@
 import java.lang.*;
-import java.security.AllPermission;
 import java.util.*;
 
 public class Arraylist
@@ -28,10 +27,10 @@ public class Arraylist
 
         
 
-        /*for(int i=0;i<al1.size();i++)
+        for(int i=0;i<al1.size();i++)
         {
             System.out.println(al1.get(i));
-        } */
+        } 
 
     }
     public static void show(int i)
