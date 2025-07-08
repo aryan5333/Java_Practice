@@ -14,11 +14,11 @@ public class ArrayDequeDemo
         ad.pollFirst();
          ad.forEach((x) -> System.out.println(x));
 
-        /*ad.offerFirst(4);
+        ad.offerFirst(4);
         ad.offerFirst(6);
         ad.offerFirst(5);
         ad.offerFirst(4);
 
-        ad.forEach((x) -> System.out.println(x)); */
+        ad.forEach((x) -> System.out.println(x)); 
     }
 }
