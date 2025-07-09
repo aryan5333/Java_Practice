@@ -42,5 +42,5 @@ class car2
         c.start();
         c.accelerate();
         c.gearchange();
-    }
+        c.openroof();
 }
