@@ -21,9 +21,9 @@ public class Datenew
         Instant i=Instant.now();
         System.out.println(i);
 
-        //LocalDate ld=LocalDate.parse("2025-02-03");
-        //LocalDate ld1=ld.plusMonths(6);
-        //System.out.println(ld1);
+        LocalDate ld=LocalDate.parse("2025-02-03");
+        LocalDate ld1=ld.plusMonths(6);
+        System.out.println(ld1);
 
     }
 }
