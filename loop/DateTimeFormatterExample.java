@@ -7,10 +7,10 @@ import java.time.format.*;
 public class DateTimeFormatterExample
 {
     public static void main(String[] args) {
-        //ZonedDateTime dt=ZonedDateTime.now();
+        ZonedDateTime dt=ZonedDateTime.now();
 
-        //DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yy  hh:mm:ss  z Z");
-        //System.out.println(df.format(dt));
+        DateTimeFormatter df = DateTimeFormatter.ofPattern("dd/MM/yy  hh:mm:ss  z Z");
+        System.out.println(df.format(dt));
 
 
         LocalDateTime dt=LocalDateTime.now();
