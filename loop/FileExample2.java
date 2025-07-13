@@ -19,12 +19,12 @@ public class FileExample2
                    System.out.print((char )x);
             }while(x!=-1);
 
-            //byte b[]=new byte[fis.available()];
+            byte b[]=new byte[fis.available()];
 
-            //fis.read();
-            //String str=new String(b);
+            fis.read();
+            String str=new String(b);
 
-            //System.out.println(str);
+            System.out.println(str);
             
 
             
