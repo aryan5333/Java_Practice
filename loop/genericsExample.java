@@ -28,7 +28,7 @@ class MyArray<T>
             ma.Append(10);
             ma.Append(20);
             ma.Append(30);
-            ma.append(30);
+            ma.Append(50);
 
             ma.Display();
         }
