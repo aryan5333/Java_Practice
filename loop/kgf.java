@@ -23,4 +23,3 @@ class kgf
         sc.close();
     }
 }
-//ok

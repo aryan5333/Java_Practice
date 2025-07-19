@@ -47,7 +47,7 @@ class MyFrame extends Frame implements KeyListener
     public void keyTyped(java.awt.event.KeyEvent ke)
     {
         l3.setText("KeyTyped");
-        l4.setText(new Date(ke.getWhen())+"");
+        
     }
 }
 
