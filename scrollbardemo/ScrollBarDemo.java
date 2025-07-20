@@ -5,17 +5,15 @@ import java.awt.event.*;
 
 class MyFrame extends Frame implements AdjustmentListener
 {
-    Scrollbar red,green,blue;
-    
+    Scrollbar red,green,orange;
     TextField tf;
     
-
     MyFrame()
     {
         super("Scrollbar Demo");
         red=new Scrollbar(Scrollbar.HORIZONTAL,0,20,0,255);
         green=new Scrollbar(Scrollbar.HORIZONTAL,0,20,0,255);
-        blue=new Scrollbar(Scrollbar.HORIZONTAL,0,20,0,255);
+        orange=new Scrollbar(Scrollbar.HORIZONTAL,0,20,0,255);
 
         tf=new TextField(20);
 
@@ -23,17 +21,17 @@ class MyFrame extends Frame implements AdjustmentListener
         tf.setBounds(50, 50,300 , 50);
         red.setBounds(50,150,300,30);
         green.setBounds(50,250,300,30);
-        blue.setBounds(50,200,300,30);
+        orange.setBounds(50,200,300,30);
         
         setLayout(null);
         add(tf);
         add(red);
         add(green);
-        add(blue);
+        add(orange);
         
         red.addAdjustmentListener(this);
         green.addAdjustmentListener(this);
-        blue.addAdjustmentListener(this);
+        orange.addAdjustmentListener(this);
 
          
 
@@ -41,7 +39,7 @@ class MyFrame extends Frame implements AdjustmentListener
 
     public void adjustmentValueChanged(AdjustmentEvent ae)
     {
-        tf.setBackground(new Color(red.getValue(),green.getValue(),blue.getValue()));
+        tf.setBackground(new Color(red.getValue(),green.getValue(),orange.getValue()));
     }
 
 }
