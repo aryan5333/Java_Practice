@@ -56,7 +56,7 @@ public class SwingAnimationDemo {
         MyFrame f=new MyFrame();
         f.setSize(500,400);
         f.setVisible(true);
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     }
     
