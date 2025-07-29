@@ -37,6 +37,7 @@ class MyFrame extends JFrame
         add(ft);
         add(ft2);
         add(jt);
+        add(jt);
 
         
     }
