@@ -52,6 +52,7 @@ class MyFrame extends JFrame implements ActionListener
         b2.addActionListener(this);
         m2.addActionListener(this);
         b2.setActionCommand("open");
+        b3.setActionCommand("save");
 
 
 
