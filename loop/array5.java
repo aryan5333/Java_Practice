@@ -1,6 +1,6 @@
 import java.lang.*;
 
-class array5
+public class array5
 {
     public static void main(String[] args) {
         
