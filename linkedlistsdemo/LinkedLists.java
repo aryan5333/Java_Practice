@@ -11,7 +11,7 @@ public class LinkedLists {
         ll.add(30);
         
         ll.add(2,40);
-        ll.add(1,35);
+        ll.add(1,35 );
 
         Iterator<Integer> it=ll.iterator();
         while(it.hasNext()){
