@@ -4,7 +4,7 @@ public class SlidingWindow {
     public static void main(String[] args) {
         int[]arr={10,2,7,8,11,13};
         int sum=0,n=arr.length;
-        int k=4;
+        int k=3;
         for(int i=0;i<k;i++){
             sum +=arr[i];
         }
