@@ -9,18 +9,18 @@ class aashu
             System.out.println("enter a number");
             int n=sc.nextInt();
 
-            int m=n;
+            int x=n;
 
             int rev=0,r;
 
             while(n>0)
             {
-                r=n%10;
+                r=x%10;
                 rev=rev*10+r;
                 n=n/10;
             }
             System.out.println(rev);
-            if(m==rev)
+            if(x==rev)
             {
                 System.out.println("its a palindrome number");
             }

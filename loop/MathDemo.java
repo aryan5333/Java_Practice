@@ -14,7 +14,7 @@ class MathDemo
         System.out.println(Math.cbrt(256));
 
         System.out.println("Exact Decrement:");
-        System.out.println(Math.decrementExact(46));
+        System.out.println(Math.decrementExact(47));
 
         //int i=Integer.MIN_VALUE;
         //i--;
