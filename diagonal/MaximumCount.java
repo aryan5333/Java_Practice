@@ -5,10 +5,10 @@ public class MaximumCount {
         int i = lowerBound(nums, 1);  // first index with value ≥ 1
         int j = lowerBound(nums, 0);  // first index with value ≥ 0
 
-        int posCount = n - i;
+        int positiveCount = n - i;
         int negCount = j;
 
-        return Math.max(posCount, negCount);
+        return Math.max(positiveCount, negCount);
     }
 
     
