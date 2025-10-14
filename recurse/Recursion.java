@@ -11,7 +11,7 @@ public class Recursion {
     }
     public static void main(String[]args){
         Recursion r=new Recursion();
-        r.printNums(100);
+        r.printNums(50);
         return;
     }
     
