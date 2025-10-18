@@ -1,6 +1,7 @@
-import java.util.HashMap;
+import java.lang.*;
+import java.util.*;
 
-public class Solution {
+public class Solution2 {
     public int romanToInt(String s) {
         HashMap<Character, Integer> romanMap = new HashMap<>();
         romanMap.put('I', 1);
