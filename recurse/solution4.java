@@ -1,35 +1,45 @@
+import java.util.*;
+
 public class Solution {
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        List<List<Integer>> result = new ArrayList<>();
+        int n = nums.length;
+        if (n < 4) return result;
 
-    public static int removeDuplicates(int[] nums) {
-        if (nums.length == 0) {
-            return 0;
-        }
-        // Pointer for the place to insert the next unique element
-        int i = 0;
+        Arrays.sort(nums);  // Step 1: Sort the array
 
-        // Start from the second element and check for duplicates
-        for (int j = 1; j < nums.length; j++) {
-            // If current element is not equal to the last unique element
-            if (nums[j] != nums[i]) {
-                i++;              // Move the unique pointer forward
-                nums[i] = nums[j]; // Update with new unique element
+        for (int i = 0; i < n - 3; i++) {
+            // Skip duplicate values for i
+            if (i > 0 && nums[i] == nums[i - 1]) continue;
+
+            for (int j = i + 1; j < n - 2; j++) {
+                // Skip duplicate values for j
+                if (j > i + 1 && nums[j] == nums[j - 1]) continue;
+
+                int left = j + 1;
+                int right = n - 1;
+
+                while (left < right) {
+                    long sum = (long) nums[i] + nums[j] + nums[left] + nums[right];
+
+                    if (sum == target) {
+                        result.add(Arrays.asList(nums[i], nums[j], nums[left], nums[right]));
+
+                        // Skip duplicates for left and right
+                        while (left < right && nums[left] == nums[left + 1]) left++;
+                        while (left < right && nums[right] == nums[right - 1]) right--;
+
+                        left++;
+                        right--;
+                    } else if (sum < target) {
+                        left++;
+                    } else {
+                        right--;
+                    }
+                }
             }
         }
 
-        // Return the number of unique elements
-        return i + 1;
-    }
-
-    // Test the solution
-    public static void main(String[] args) {
-        int[] nums = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
-
-        int k = removeDuplicates(nums);
-
-        System.out.println("Number of unique elements: " + k);
-        System.out.print("Modified array: ");
-        for (int i = 0; i < k; i++) {
-            System.out.print(nums[i] + " ");
-        }
+        return result;
     }
 }
