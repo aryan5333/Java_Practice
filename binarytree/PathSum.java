@@ -21,7 +21,7 @@ public class PathSum  {
     }
     public boolean f(TreeNode node,int SumTillParent,int targetSum){
         if(node==null){
-            return false;
+            return t;
         }
         else if(node.left==null && node.right==null){
             int currentSum=SumTillParent+node.val;
