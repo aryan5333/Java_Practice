@@ -70,6 +70,7 @@ public class tri{
         System.out.println(search("their"));
         System.out.println(search("thor"));
         System.out.println(StartsWith("an"));
+        System.out.println(StartsWith("thei"));
     
 }
 }
